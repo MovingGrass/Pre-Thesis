@@ -27,6 +27,7 @@ MonoBehaviour:
     text:
     linkText: Get answers and support
     url: https://forum.unity.com/forums/universal-render-pipeline.383/
+  - heading: Report bugs
     text:
     linkText: Submit a report
     url: https://unity3d.com/unity/qa/bug-reporting
