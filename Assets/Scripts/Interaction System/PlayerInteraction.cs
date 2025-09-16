@@ -53,7 +53,7 @@ public class PlayerInteraction : MonoBehaviour
             if (hit.collider.CompareTag("Interactable"))
             {
                 // Try to get the Interactable component from the hit object
-                newInteractable = hit.collider.GetComponent<Interactable>();
+                newInteractable = hit.collider.GetComponentInParent<Interactable>();
             }
         }
 
