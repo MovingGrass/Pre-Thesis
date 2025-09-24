@@ -6,7 +6,9 @@ using UnityEngine;
 public class DoorController : MonoBehaviour
 {
     [Header("Door Settings")]
-    public bool isLocked = true;
+    public bool isLocked = true;    
+    public bool needsKey = false;
+    public string requiredKeyId = "";
     public bool isOpen = false;
 
     [Header("Interaction Messages")]
@@ -16,7 +18,8 @@ public class DoorController : MonoBehaviour
     public string lockedMessage = "Locked";
     [Tooltip("Pesan saat pintu sudah terbuka.")]
     public string closeMessage = "Close";
-
+    public string unlockedMessage = "Unlocked";
+    private PlayerInventory playerInventory;
     
     private Interactable interactable;
     private Animator animator; 
@@ -24,7 +27,8 @@ public class DoorController : MonoBehaviour
     void Awake()
     {
         interactable = GetComponent<Interactable>();
-        animator = GetComponent<Animator>(); // Opsional
+        animator = GetComponent<Animator>();
+        playerInventory = FindObjectOfType<PlayerInventory>();
         UpdateInteractionMessage();
     }
 
@@ -41,7 +45,15 @@ public class DoorController : MonoBehaviour
 
         if (isLocked)
         {
-            StartCoroutine(ShowTemporaryMessage(lockedMessage, 2f));
+            if (needsKey && playerInventory != null && playerInventory.HasKey(requiredKeyId))
+            {
+                UnlockDoor();
+            }
+            else
+            {
+                // Jika tidak punya kunci, tampilkan pesan terkunci
+                StartCoroutine(ShowTemporaryMessage(lockedMessage, 2f));
+            }
         }
         else
         {
