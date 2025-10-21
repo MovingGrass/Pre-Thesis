@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2180604866089119220}
   - component: {fileID: 6782534131880228875}
   - component: {fileID: 139523542968121192}
+  - component: {fileID: 7018889279937534945}
   m_Layer: 0
   m_Name: prf_key_01
   m_TagString: Interactable
@@ -63,6 +64,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   keyId: DefaultKey
+--- !u!114 &7018889279937534945
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2472284474306814534}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  outlineWidth: 10
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
 --- !u!1001 &3857526489728714648
 PrefabInstance:
   m_ObjectHideFlags: 0

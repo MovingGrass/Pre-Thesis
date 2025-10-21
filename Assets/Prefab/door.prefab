@@ -291,7 +291,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   outlineMode: 0
   outlineColor: {r: 1, g: 1, b: 1, a: 1}
-  outlineWidth: 2
+  outlineWidth: 10
   precomputeOutline: 0
   bakeKeys: []
   bakeValues: []
@@ -308,10 +308,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isLocked: 0
+  needsKey: 0
+  requiredKeyId: 
   isOpen: 0
   openMessage: Buka Pintu
   lockedMessage: Locked
   closeMessage: Close
+  unlockedMessage: Unlocked
 --- !u!1 &5123318428306267159
 GameObject:
   m_ObjectHideFlags: 0
