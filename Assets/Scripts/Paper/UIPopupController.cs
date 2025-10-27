@@ -55,7 +55,7 @@ public class UIPopupController : MonoBehaviour
     
     public void ClosePopup()
     {
-        GameManager.isUIOpen = false;
+        GameManager.isUIOpen = false;   
         popupPanel.SetActive(false);
 
         
