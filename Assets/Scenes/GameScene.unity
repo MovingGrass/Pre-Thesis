@@ -1695,6 +1695,7 @@ CanvasRenderer:
   m_GameObject: {fileID: 277133805}
   m_CullTransparentMesh: 1
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
@@ -1721,15 +1722,21 @@ Transform:
 =======
 --- !u!1001 &293005059
 >>>>>>> parent of b9b9a5e (.)
+=======
+--- !u!1001 &293005059
+>>>>>>> parent of b9b9a5e (.)
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+=======
+>>>>>>> parent of b9b9a5e (.)
 =======
 >>>>>>> parent of b9b9a5e (.)
     m_TransformParent: {fileID: 0}
@@ -1785,6 +1792,7 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4591828438052302294, guid: a8a1ab089f8320b498643b66b2db4c68,
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
@@ -1853,14 +1861,19 @@ PrefabInstance:
 >>>>>>> Stashed changes
 =======
 >>>>>>> parent of b9b9a5e (.)
+=======
+>>>>>>> parent of b9b9a5e (.)
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+=======
+>>>>>>> parent of b9b9a5e (.)
 =======
 >>>>>>> parent of b9b9a5e (.)
     - target: {fileID: 4591828438052302294, guid: a8a1ab089f8320b498643b66b2db4c68,
@@ -1869,6 +1882,7 @@ PrefabInstance:
       value: 180
       objectReference: {fileID: 0}
     - target: {fileID: 4591828438052302294, guid: a8a1ab089f8320b498643b66b2db4c68,
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
@@ -1890,14 +1904,19 @@ PrefabInstance:
 >>>>>>> Stashed changes
 =======
 >>>>>>> parent of b9b9a5e (.)
+=======
+>>>>>>> parent of b9b9a5e (.)
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+=======
+>>>>>>> parent of b9b9a5e (.)
 =======
 >>>>>>> parent of b9b9a5e (.)
     - target: {fileID: 4591828438052302294, guid: a8a1ab089f8320b498643b66b2db4c68,
@@ -1909,6 +1928,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: air_conditioner
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
@@ -1928,11 +1948,14 @@ PrefabInstance:
 >>>>>>> Stashed changes
 =======
 >>>>>>> parent of b9b9a5e (.)
+=======
+>>>>>>> parent of b9b9a5e (.)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
@@ -1947,6 +1970,9 @@ PrefabInstance:
 =======
   m_SourcePrefab: {fileID: 100100000, guid: 2e6de12b1fa53d14b90835d4b6d3e78a, type: 3}
 >>>>>>> Stashed changes
+=======
+  m_SourcePrefab: {fileID: 100100000, guid: a8a1ab089f8320b498643b66b2db4c68, type: 3}
+>>>>>>> parent of b9b9a5e (.)
 =======
   m_SourcePrefab: {fileID: 100100000, guid: a8a1ab089f8320b498643b66b2db4c68, type: 3}
 >>>>>>> parent of b9b9a5e (.)
@@ -8177,6 +8203,7 @@ MonoBehaviour:
   bakeKeys: []
   bakeValues: []
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
@@ -8235,15 +8262,21 @@ Transform:
 =======
 --- !u!1001 &1731874775
 >>>>>>> parent of b9b9a5e (.)
+=======
+--- !u!1001 &1731874775
+>>>>>>> parent of b9b9a5e (.)
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+=======
+>>>>>>> parent of b9b9a5e (.)
 =======
 >>>>>>> parent of b9b9a5e (.)
     m_TransformParent: {fileID: 0}
@@ -8309,6 +8342,7 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 60d1e682deb08994483bdd2780dcca1f,
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
@@ -8397,14 +8431,19 @@ PrefabInstance:
 >>>>>>> Stashed changes
 =======
 >>>>>>> parent of b9b9a5e (.)
+=======
+>>>>>>> parent of b9b9a5e (.)
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+=======
+>>>>>>> parent of b9b9a5e (.)
 =======
 >>>>>>> parent of b9b9a5e (.)
     - target: {fileID: -8679921383154817045, guid: 60d1e682deb08994483bdd2780dcca1f,
@@ -8418,6 +8457,7 @@ PrefabInstance:
       value: key3
       objectReference: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> Stashed changes
 =======
@@ -8426,10 +8466,13 @@ PrefabInstance:
 >>>>>>> Stashed changes
 =======
 >>>>>>> parent of b9b9a5e (.)
+=======
+>>>>>>> parent of b9b9a5e (.)
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
@@ -8444,6 +8487,9 @@ PrefabInstance:
 =======
   m_SourcePrefab: {fileID: 100100000, guid: 9be99ee0c2686ef44bf420ce960b6598, type: 3}
 >>>>>>> Stashed changes
+=======
+  m_SourcePrefab: {fileID: 100100000, guid: 60d1e682deb08994483bdd2780dcca1f, type: 3}
+>>>>>>> parent of b9b9a5e (.)
 =======
   m_SourcePrefab: {fileID: 100100000, guid: 60d1e682deb08994483bdd2780dcca1f, type: 3}
 >>>>>>> parent of b9b9a5e (.)
@@ -11228,9 +11274,12 @@ SceneRoots:
   - {fileID: 136214044}
   - {fileID: 531455877}
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+=======
+>>>>>>> parent of b9b9a5e (.)
 =======
 >>>>>>> parent of b9b9a5e (.)
   - {fileID: 7976808551508370895}
@@ -11246,6 +11295,7 @@ SceneRoots:
   - {fileID: 642225852}
   - {fileID: 190502668}
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   - {fileID: 952368708}
 >>>>>>> Stashed changes
@@ -11255,5 +11305,7 @@ SceneRoots:
 =======
   - {fileID: 952368708}
 >>>>>>> Stashed changes
+=======
+>>>>>>> parent of b9b9a5e (.)
 =======
 >>>>>>> parent of b9b9a5e (.)

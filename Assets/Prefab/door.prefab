@@ -311,7 +311,7 @@ MonoBehaviour:
   needsKey: 0
   requiredKeyId: 
   isOpen: 0
-  openMessage: Open
+  openMessage: Buka Pintu
   lockedMessage: Locked
   closeMessage: Close
   unlockedMessage: Unlocked
