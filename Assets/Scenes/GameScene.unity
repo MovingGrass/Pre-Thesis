@@ -1917,8 +1917,11 @@ CanvasRenderer:
   m_GameObject: {fileID: 277133805}
   m_CullTransparentMesh: 1
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 --- !u!1001 &293005059
 =======
+=======
+>>>>>>> Stashed changes
 --- !u!4 &282043683 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7405235075765228569, guid: 9be99ee0c2686ef44bf420ce960b6598,
@@ -1926,12 +1929,16 @@ Transform:
   m_PrefabInstance: {fileID: 1418444017}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &295108438
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
     m_TransformParent: {fileID: 0}
     m_Modifications:
@@ -1987,6 +1994,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4591828438052302294, guid: a8a1ab089f8320b498643b66b2db4c68,
 =======
+=======
+>>>>>>> Stashed changes
     m_TransformParent: {fileID: 1698268919}
     m_Modifications:
     - target: {fileID: 1604898502258710214, guid: 2e6de12b1fa53d14b90835d4b6d3e78a,
@@ -2040,11 +2049,15 @@ PrefabInstance:
       value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 1604898502258710214, guid: 2e6de12b1fa53d14b90835d4b6d3e78a,
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
     - target: {fileID: 4591828438052302294, guid: a8a1ab089f8320b498643b66b2db4c68,
         type: 3}
@@ -2053,17 +2066,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4591828438052302294, guid: a8a1ab089f8320b498643b66b2db4c68,
 =======
+=======
+>>>>>>> Stashed changes
     - target: {fileID: 1604898502258710214, guid: 2e6de12b1fa53d14b90835d4b6d3e78a,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: -90
       objectReference: {fileID: 0}
     - target: {fileID: 1604898502258710214, guid: 2e6de12b1fa53d14b90835d4b6d3e78a,
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
     - target: {fileID: 4591828438052302294, guid: a8a1ab089f8320b498643b66b2db4c68,
         type: 3}
@@ -2075,10 +2094,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: air_conditioner
 =======
+=======
+>>>>>>> Stashed changes
     - target: {fileID: 3638996190722315436, guid: 2e6de12b1fa53d14b90835d4b6d3e78a,
         type: 3}
       propertyPath: m_Name
       value: wall_standard_door_frame (2)
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -2086,7 +2110,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   m_SourcePrefab: {fileID: 100100000, guid: a8a1ab089f8320b498643b66b2db4c68, type: 3}
+=======
+  m_SourcePrefab: {fileID: 100100000, guid: 2e6de12b1fa53d14b90835d4b6d3e78a, type: 3}
+>>>>>>> Stashed changes
 =======
   m_SourcePrefab: {fileID: 100100000, guid: 2e6de12b1fa53d14b90835d4b6d3e78a, type: 3}
 >>>>>>> Stashed changes
@@ -9024,8 +9052,11 @@ MonoBehaviour:
   bakeKeys: []
   bakeValues: []
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 --- !u!1001 &1731874775
 =======
+=======
+>>>>>>> Stashed changes
 --- !u!1 &1698268918
 GameObject:
   m_ObjectHideFlags: 0
@@ -9065,12 +9096,16 @@ Transform:
   m_Father: {fileID: 952368708}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1001 &1721252180
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
     m_TransformParent: {fileID: 0}
     m_Modifications:
@@ -9136,6 +9171,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 60d1e682deb08994483bdd2780dcca1f,
 =======
+=======
+>>>>>>> Stashed changes
     m_TransformParent: {fileID: 1698268919}
     m_Modifications:
     - target: {fileID: 131623098255990756, guid: 9be99ee0c2686ef44bf420ce960b6598,
@@ -9209,11 +9246,15 @@ PrefabInstance:
       value: -90
       objectReference: {fileID: 0}
     - target: {fileID: 7405235075765228569, guid: 9be99ee0c2686ef44bf420ce960b6598,
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
     - target: {fileID: -8679921383154817045, guid: 60d1e682deb08994483bdd2780dcca1f,
         type: 3}
@@ -9227,12 +9268,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   m_SourcePrefab: {fileID: 100100000, guid: 60d1e682deb08994483bdd2780dcca1f, type: 3}
+=======
+  m_SourcePrefab: {fileID: 100100000, guid: 9be99ee0c2686ef44bf420ce960b6598, type: 3}
+>>>>>>> Stashed changes
 =======
   m_SourcePrefab: {fileID: 100100000, guid: 9be99ee0c2686ef44bf420ce960b6598, type: 3}
 >>>>>>> Stashed changes
@@ -12172,6 +12219,7 @@ SceneRoots:
   - {fileID: 136214044}
   - {fileID: 531455877}
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   - {fileID: 7976808551508370895}
   - {fileID: 1077281756}
   - {fileID: 826453722}
@@ -12184,6 +12232,9 @@ SceneRoots:
   - {fileID: 1032936894}
   - {fileID: 642225852}
   - {fileID: 190502668}
+=======
+  - {fileID: 952368708}
+>>>>>>> Stashed changes
 =======
   - {fileID: 952368708}
 >>>>>>> Stashed changes
