@@ -15,7 +15,7 @@ public class Interactable : MonoBehaviour
     [Tooltip("Event to invoke when the player interacts with this object.")]
     public UnityEvent onInteraction; // UnityEvent to call custom functions on interaction
 
-    
+    private bool isOutlineLocked = false;
     void Start()
     {
         
@@ -34,7 +34,7 @@ public class Interactable : MonoBehaviour
     /// </summary>
     public void EnableOutline()
     {
-        if (outline != null)
+        if (outline != null && !isOutlineLocked)
         {
             outline.enabled = true;
         }
@@ -45,9 +45,30 @@ public class Interactable : MonoBehaviour
     /// </summary>
     public void DisableOutline()
     {
-        if (outline != null)
+        if (outline != null && !isOutlineLocked)
         {
             outline.enabled = false;
+        }
+    }
+
+    public void SetPersistentOutline(bool active, Color color)
+    {
+        isOutlineLocked = active;
+        if (outline != null)
+        {
+            if (active)
+            {
+                outline.OutlineColor = color;
+                outline.enabled = true;
+            }
+            else
+            {
+                // Saat kunci dilepas, matikan outline.
+                // PlayerInteraction akan menyalakannya lagi jika crosshair masih di atasnya.
+                outline.enabled = false;
+                // Kembalikan warna default untuk hover berikutnya
+                outline.OutlineColor = Color.white;
+            }
         }
     }
 

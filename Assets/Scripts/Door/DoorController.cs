@@ -22,7 +22,7 @@ public class DoorController : MonoBehaviour
     private PlayerInventory playerInventory;
     
     private Interactable interactable;
-    private Animator animator; 
+    private Animator animator;
 
     void Awake()
     {
@@ -30,6 +30,19 @@ public class DoorController : MonoBehaviour
         animator = GetComponent<Animator>();
         playerInventory = FindObjectOfType<PlayerInventory>();
         UpdateInteractionMessage();
+    }
+    
+     public void UnlockAndOpen()
+    {
+        // Pertama, buka kuncinya
+        isLocked = false;
+        UpdateInteractionMessage();
+
+        // Kedua, jika pintu masih tertutup, buka
+        if (!isOpen)
+        {
+            OpenDoor();
+        }
     }
 
     /// <summary>
