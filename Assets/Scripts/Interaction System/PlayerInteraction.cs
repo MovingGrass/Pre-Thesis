@@ -7,10 +7,21 @@ public class PlayerInteraction : MonoBehaviour
     // --- Variables ---
     [Tooltip("How far the player can reach to interact with objects.")]
     public float playerReach = 3f; // Max distance for interaction
-
+     public static PlayerInteraction instance;
     private Interactable currentInteractable; // The interactable object currently being looked at
     private Camera playerCamera; // Reference to the player's camera
 
+    void Awake()
+    {
+        if (instance == null) instance = this;
+        else Destroy(gameObject);
+    }
+    
+    // --- TAMBAHKAN FUNGSI GETTER INI ---
+    public Interactable GetCurrentInteractable()
+    {
+        return currentInteractable;
+    }
     
     void Start()
     {

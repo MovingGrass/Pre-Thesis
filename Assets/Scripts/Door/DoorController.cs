@@ -60,7 +60,7 @@ public class DoorController : MonoBehaviour
         {
             if (needsKey && playerInventory != null && playerInventory.HasKey(requiredKeyId))
             {
-                UnlockDoor();
+                UnlockAndOpen();
             }
             else
             {
