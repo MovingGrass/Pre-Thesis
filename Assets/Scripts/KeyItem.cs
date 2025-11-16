@@ -14,6 +14,8 @@ public class KeyItem : MonoBehaviour
     [Tooltip("Pesan yang muncul jika pemain mencoba mengambil kunci ini saat sudah punya kunci lain.")]
     public string alreadyHoldingKeyMessage = "You can only take 1 key.";
 
+    [Header("Audio")]
+    public AudioClip pickupSound;
     // Referensi ke komponen Interactable di objek ini
     private Interactable interactable;
 
@@ -39,6 +41,11 @@ public class KeyItem : MonoBehaviour
         // Coba tambahkan kunci ke inventory
         if (playerInventory.AddKey(keyId))
         {
+
+            if (pickupSound != null)
+            {
+                AudioSource.PlayClipAtPoint(pickupSound, transform.position);
+            }
             // --- BERHASIL DIAMBIL ---
             // Sembunyikan pesan interaksi dari HUD
             HUDController.instance.DisableInteractionText();

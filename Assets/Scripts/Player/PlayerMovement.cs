@@ -13,10 +13,14 @@ public class PlayerMovement : MonoBehaviour
     public Transform groundCheck;       // Assign the 'GroundCheck' empty GameObject here
     public float groundDistance = 0.4f; // Radius of the sphere check
     public LayerMask groundMask;        // Set this to the 'Ground' layer in the inspector
-
+    private AudioSource audioSource;
     Vector3 velocity;
     bool isGrounded;
-
+    void Awake() // <-- UBAH Start() MENJADI Awake() AGAR LEBIH KONSISTEN
+    {
+        // --- BARU: Dapatkan komponen AudioSource ---
+        audioSource = GetComponent<AudioSource>();
+    }
     void Update()
     {
         // Ground Check
@@ -54,5 +58,30 @@ public class PlayerMovement : MonoBehaviour
         // Apply velocity (gravity pull) to the controller
         // Needs to be multiplied by Time.deltaTime again based on physics formula (d = 1/2*g*t^2)
         controller.Move(velocity * Time.deltaTime);
+
+        HandleFootstepSounds(x, z);
+    }
+
+    private void HandleFootstepSounds(float horizontalInput, float verticalInput)
+    {
+        if (audioSource == null) return;
+
+        // Cek jika pemain berada di darat DAN sedang bergerak (input tidak nol)
+        if (isGrounded && (horizontalInput != 0 || verticalInput != 0))
+        {
+            // Jika suara belum diputar, mulai putar
+            if (!audioSource.isPlaying)
+            {
+                audioSource.Play();
+            }
+        }
+        else
+        {
+            // Jika pemain berhenti atau di udara, hentikan suara
+            if (audioSource.isPlaying)
+            {
+                audioSource.Stop();
+            }
+        }
     }
 }

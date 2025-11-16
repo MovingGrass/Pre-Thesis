@@ -11,6 +11,12 @@ public class DoorController : MonoBehaviour
     public string requiredKeyId = "";
     public bool isOpen = false;
 
+    [Header("Audio")]
+    public AudioClip openSound;
+    public AudioClip lockedSound;
+    public AudioClip closeSound;
+    private AudioSource audioSource;
+
     [Header("Interaction Messages")]
     [Tooltip("Pesan saat pintu bisa dibuka.")]
     public string openMessage = "Open";
@@ -29,6 +35,7 @@ public class DoorController : MonoBehaviour
         interactable = GetComponent<Interactable>();
         animator = GetComponent<Animator>();
         playerInventory = FindObjectOfType<PlayerInventory>();
+        audioSource = GetComponent<AudioSource>();
         UpdateInteractionMessage();
     }
     
@@ -58,6 +65,10 @@ public class DoorController : MonoBehaviour
 
         if (isLocked)
         {
+            if (audioSource != null && lockedSound != null)
+            {
+                audioSource.PlayOneShot(lockedSound);
+            }
             if (needsKey && playerInventory != null && playerInventory.HasKey(requiredKeyId))
             {
                 UnlockAndOpen();
@@ -91,6 +102,11 @@ public class DoorController : MonoBehaviour
         {
             animator.SetBool("IsOpen", false);
         }
+
+        if (audioSource != null && closeSound != null)
+        {
+            audioSource.PlayOneShot(closeSound);
+        }
         UpdateInteractionMessage();
     }
 
@@ -104,6 +120,11 @@ public class DoorController : MonoBehaviour
         else
         {
             gameObject.SetActive(false);
+        }
+
+        if (audioSource != null && openSound != null)
+        {
+            audioSource.PlayOneShot(openSound);
         }
         
         UpdateInteractionMessage();
