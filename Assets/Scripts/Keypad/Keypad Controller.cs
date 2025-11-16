@@ -17,7 +17,11 @@ public class KeypadController : MonoBehaviour
     public string correctCode = "1234";
     [Tooltip("Batas maksimal digit yang bisa dimasukkan.")]
     public int maxDigits = 8;
-
+    [Header("Audio")]
+    public AudioClip keyPressSound;
+    public AudioClip correctCodeSound;
+    public AudioClip wrongCodeSound;
+    private AudioSource audioSource;
     [Header("Feedback Colors")]
     public Color defaultColor = Color.black;
     public Color correctColor = Color.green;
@@ -33,6 +37,18 @@ public class KeypadController : MonoBehaviour
     private FPController playerMouseLook;
     private PlayerMovement playerMovement;
 
+    void Awake() 
+    {
+        // Dapatkan komponen AudioSource dari objek ini
+        audioSource = GetComponent<AudioSource>();
+        if (audioSource == null)
+        {
+            // Tambahkan AudioSource jika belum ada, untuk mencegah error
+            Debug.LogWarning("KeypadController: Tidak ada AudioSource ditemukan. Menambahkan satu secara otomatis.");
+            audioSource = gameObject.AddComponent<AudioSource>();
+            audioSource.playOnAwake = false;
+        }
+    }
     void Start()
     {
         playerMouseLook = FindObjectOfType<FPController>();
@@ -59,9 +75,11 @@ public class KeypadController : MonoBehaviour
     /// Menambahkan digit ke input. Dipanggil oleh tombol angka 0-9.
     /// </summary>
     public void AddDigit(string digit)
-    {
+    { 
+        PlaySound(keyPressSound);
         if (currentInput.Length < maxDigits)
         {
+            
             currentInput += digit;
             UpdateDisplay();
         }
@@ -72,6 +90,7 @@ public class KeypadController : MonoBehaviour
     /// </summary>
     public void ClearInput()
     {
+        PlaySound(keyPressSound);
         currentInput = "";
         UpdateDisplay();
     }
@@ -81,6 +100,7 @@ public class KeypadController : MonoBehaviour
     /// </summary>
     public void CheckCode()
     {
+        PlaySound(keyPressSound);
         if (currentInput == correctCode)
         {
             StartCoroutine(ProcessCorrectCode());
@@ -95,6 +115,7 @@ public class KeypadController : MonoBehaviour
 
     private IEnumerator ProcessCorrectCode()
     {
+        PlaySound(correctCodeSound);
         displayText.text = "CORRECT";
         displayText.color = correctColor;
         onCorrectCode.Invoke(); // Panggil event unlock pintu, dll.
@@ -104,8 +125,17 @@ public class KeypadController : MonoBehaviour
         CloseKeypad();
     }
 
+    private void PlaySound(AudioClip clip)
+    {
+        if (audioSource != null && clip != null)
+        {
+            audioSource.PlayOneShot(clip);
+        }
+    }
+
     private IEnumerator ProcessWrongCode()
     {
+        PlaySound(wrongCodeSound);
         displayText.text = "INCORRECT";
         displayText.color = incorrectColor;
 
